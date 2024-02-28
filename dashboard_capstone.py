@@ -83,7 +83,7 @@ with tab_resume:
     # hasil perhitungan
     st.subheader('Kesimpulan: ')
     st.write(f'1. Pada tahun {selected_tahun}, rata-rata angka harapan hidup penduduk di Jawa Barat adalah {round(rata_hidup, 2)} tahun.')
-    st.write(f'2. Rata-rata pengeluaran per kapita penduduk di Jawa Barat adalah Rp {format(round(rata_pengeluaran), ',')}.')
+    st.write(f"2. Rata-rata pengeluaran per kapita penduduk di Jawa Barat adalah Rp {round(rata_pengeluaran):,}.")
     st.write(f'3. Total penduduk di Jawa Barat pada tahun {selected_tahun} adalah {format_big_number(jumlah_pdk)} Jiwa.')
     st.write(f'4. Total penduduk miskin di Jawa Barat pada tahun {selected_tahun} adalah {format_big_number(jumlah_penmiskin)} atau {round(persen_jumlah_penmiskin, 2)}% dari total penduduk.')
     st.write(f'5. Total dokter umum di Jawa Barat pada tahun {selected_tahun} adalah {jumlah_dokter} atau {round(persen_dokter, 2)}% dari total penduduk.')
